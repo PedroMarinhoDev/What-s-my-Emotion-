@@ -1,3 +1,139 @@
-body {
-  background-color: lightblue;
+
+:root {
+  --departure: 200px;
+
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+#student-screen {
+  display: flex;
+  flex-direction: column;
+  height: 545px;
+  width: 640px;
+  max-width: 50%;
+  border: lawngreen;
+  border-width: 5px;
+  border-style: solid;
+  justify-content: flex-end;
+
+}
+
+#teacher-screen {
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  width: 640px;
+  max-width: 50%;
+  background-color: rgb(255, 255, 255);
+  border: crimson;
+  border-width: 5px;
+  border-style: solid;
+  justify-content: flex-end;
+}
+
+#toolbar {
+  background-color: ivory;
+}
+
+#controls {
+  height: 25px;
+  width: 100%;
+  background-color: rgb(185, 185, 185);
+}
+
+#reactions {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
+
+#reactions img {
+
+  height: 100px;
+  max-height: 100px;
+  max-width: 100px;
+
+}
+
+#reactions-feedback {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
+
+#reactions-feedback img {
+
+  height: 100px;
+  max-height: 100px;
+  max-width: 100px;
+
+}
+
+#watching-feedback {
+  opacity: 0%;
+  transform: translate(var(--departure), 50px);
+  animation-timing-function: ease-in;
+
+}
+
+
+
+#questioning-feedback {
+  opacity: 0%;
+  transform: translate(var(--departure), 50px);
+  animation-timing-function: ease-in;
+
+}
+
+#understanding-feedback {
+  opacity: 0%;
+  transform: translate(var(--departure), 50px);
+  animation-timing-function: ease-in;
+
+}
+
+#mindblown-feedback {
+  opacity: 0%;
+  transform: translate(var(--departure), 50px);
+  animation-timing-function: ease-in;
+
+}
+
+
+.transform-active {
+
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+@keyframes example {
+
+
+  0% {
+
+      opacity: 50%;
+      transform: translate(var(--departure), 50px);
+
+  }
+
+  50% {
+
+      opacity: 100%;
+
+  }
+
+  100% {
+
+      opacity: 0%;
+      transform: translate(var(--departure), -370px);
+
+  }
 }

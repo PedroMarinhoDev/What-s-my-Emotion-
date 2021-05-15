@@ -25,8 +25,46 @@
     </style>
   </head>
   <body>
-    <video id="video" width="720" height="560" autoplay muted></video>
-    <h1 id="message"></h1>
-    <img src="hey.jpg" id="image" />
+     
+
+    <div id="container">
+
+      <div id="student-screen">
+
+          <img src="./img/videofeed.png" alt="" id="video-feed">
+          <div id="toolbar">
+
+              <div id="controls"></div>
+
+              <div id="reactions">
+
+                  <img src="./img/watching.svg" alt="watching reaction icon" id="watching"
+                      onclick="watchingReaction()">
+                  <img src="./img/questioning.svg" alt="questioning reaction icon" id="questioning"
+                      onclick="questioningReaction()">
+                  <img src="./img/understanding.svg" alt="understanding reaction icon" id="understanding"
+                      onclick="understandingReaction()">                  
+
+              </div>
+          </div>
+
+
+      </div>
+      <video id="video" width="720" height="560" autoplay muted></video>   
+      <div id="teacher-screen">
+
+          <div id="reactions-feedback">
+
+
+              <img src="./img/watching.svg" alt="watching reaction icon" id="watching-feedback" class="transform">
+
+
+              <img src="./img/questioning.svg" alt="questioning reaction icon" id="questioning-feedback">
+              <img src="./img/understanding.svg" alt="understanding reaction icon" id="understanding-feedback">
+              
+
+          </div>
+      </div>
+  </div>
   </body>
 </html>
